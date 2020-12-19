@@ -1,0 +1,29 @@
+<section class="dropContainer" id= "dropContainer">
+  <form id = "theForm" enctype="multipart/form-data" method="POST">
+    <input id='fileInput' type='file' name="file" hidden/>
+  </form>
+
+  <div id = loaderCrile class="loader"></div>
+  <button class= "button" id = "uploadButton" onClick = "upload()" > Add</button>
+
+
+  <% if (typeof msg1 != 'undefined'){ %>
+    <div id = 'error'
+    <p id = 'error' class = 'error'> <%= msg1 %> </div>
+  <%}%>
+  <% if (typeof msg2 != 'undefined' && msg2.a == "False") { %>
+    <p id ="error", class = 'error'>The compression/decomression was not sucessful! </p>
+  <%}%>
+  <div id="dropzoneInfo" class="dropzoneInfo">
+    <div>
+      <button class ="buttonSquare" id = "cButton"> Huff</button>
+      <button class ="buttonSquare" id = "dButton"> Dehuff</button>
+    </div>
+
+    <h3 id="info">
+      You can compress any file format using this online App
+    </h3>
+
+  </div>
+  <script src = "javascripts/main.js"></script>
+</section>

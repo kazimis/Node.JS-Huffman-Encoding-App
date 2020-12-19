@@ -1,0 +1,20 @@
+<section class="dropContainer" id= "dropContainer">
+
+  <div class="check"></div>
+  <div id="dropzoneInfo" class="dropzoneInfo">
+    <h1 id="info">Download is ready</h1>
+      <% if (typeof msg2 != 'undefined'){ %>
+      <form id = "theForm" action = <%= msg2.file %> enctype="multipart/form-data" method="GET">
+        <input id='fileInput'  name="file" hidden/>
+      </form>
+      <% if (typeof msg2.cSize != 'undefined'){ %>
+        <p> Original file size in bytes <%= msg2.sizeOriginal %> </p>
+        <p> Compressed file size in bytes <%= msg2.sizeComp %> </p>
+       <%}%>
+       <div>
+         <button class= "buttonSquare" id = "downloadButton" onClick ="d_load()"> Download </button>
+       </div>
+      <%}%>
+  </div>
+  <script src = "javascripts/main.js"></script>
+</section>

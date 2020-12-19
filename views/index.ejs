@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>File Compressor</title>
+		<meta charset="utf-8" />
+		<link href="stylesheets/main.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<nav class="navigator">
+		  <div class="navContainer">
+
+				 <div class="navContents">
+		      <!-- Site-title  -->
+		      <!-- <a href="#" class="navLogo text-3xl font-bold p-3">File Compressor</a> -->
+					<a href="#" class="navLogo">File Compressor</a>
+		      <!-- Menus  -->
+		      <ul>
+		        <li class = navLinks>
+		          <a href="/">Home</a>
+		        </li>
+		        <li class = navLinks>
+		          <a href ="#" onclick="loadAbout()">About</a>
+		        </li>
+		        <li class = navLinks>
+		          <a href="#">FAQS</a>
+		        </li>
+		        <li class = navLinks>
+		          <a href="#">Contact</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		<div id ="ejs">
+		<% if (typeof msg2 != 'undefined'){ %>
+			<% if (msg2.a == "download" ) { %>
+				<%- include('download.ejs') %>
+			<%} else { %>
+				<%- include('upload.ejs') %>
+			<%}%>
+		<!-- <%}%>
+		<% if (typeof msg3 != 'undefined'){ %>
+	 		<% if (msg3.a == "download" ) { %>
+	 			<%- include('download.ejs') %>
+	 		<%} else { %>
+	 			<%- include('upload.ejs') %>
+	 		<%}%> -->
+	 	<%}else{%>
+	 		 <%- include('upload.ejs') %>
+	 	 <%}%>
+	 </div>
+	 <div id = "aboutPage"> <%- include('about.ejs') %></div>
+		<script src = "javascripts/main.js"></script>
+		<footer id = "footer">
+      <p>Company © None</p>
+    </footer>
+	</body>
+	</html>
