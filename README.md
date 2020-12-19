@@ -9,6 +9,7 @@ C++, Javascript and python is used for this application. C++ is used for Huffman
 I use two communication methods function call and running language as executable file. In function call I used [Napi] to add [C++] addon in [Nodejs]. The second method that I used is calling [python] script from [Nodejs] child process. 
 
 ## How to run this App
+To run this app it requires vagrant and Node.js.
 ```python
 vagrant up
 vagrant provision
