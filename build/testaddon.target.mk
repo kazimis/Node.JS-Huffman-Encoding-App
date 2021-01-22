@@ -40,14 +40,14 @@ CFLAGS_CC_Debug := \
 	-std=gnu++1y
 
 INCS_Debug := \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/include/node \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/src \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/deps/openssl/config \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/deps/openssl/openssl/include \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/deps/uv/include \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/deps/zlib \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/deps/v8/include \
-	-I/home/sarajuddin/Desktop/project_383/node_modules/node-addon-api
+	-I/home/kazimis/.cache/node-gyp/15.5.0/include/node \
+	-I/home/kazimis/.cache/node-gyp/15.5.0/src \
+	-I/home/kazimis/.cache/node-gyp/15.5.0/deps/openssl/config \
+	-I/home/kazimis/.cache/node-gyp/15.5.0/deps/openssl/openssl/include \
+	-I/home/kazimis/.cache/node-gyp/15.5.0/deps/uv/include \
+	-I/home/kazimis/.cache/node-gyp/15.5.0/deps/zlib \
+	-I/home/kazimis/.cache/node-gyp/15.5.0/deps/v8/include \
+	-I/home/kazimis/Node.JS-Huffman-Encoding-App/node_modules/node-addon-api
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=testaddon' \
@@ -84,14 +84,14 @@ CFLAGS_CC_Release := \
 	-std=gnu++1y
 
 INCS_Release := \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/include/node \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/src \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/deps/openssl/config \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/deps/openssl/openssl/include \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/deps/uv/include \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/deps/zlib \
-	-I/home/sarajuddin/.cache/node-gyp/12.18.3/deps/v8/include \
-	-I/home/sarajuddin/Desktop/project_383/node_modules/node-addon-api
+	-I/home/kazimis/.cache/node-gyp/15.5.0/include/node \
+	-I/home/kazimis/.cache/node-gyp/15.5.0/src \
+	-I/home/kazimis/.cache/node-gyp/15.5.0/deps/openssl/config \
+	-I/home/kazimis/.cache/node-gyp/15.5.0/deps/openssl/openssl/include \
+	-I/home/kazimis/.cache/node-gyp/15.5.0/deps/uv/include \
+	-I/home/kazimis/.cache/node-gyp/15.5.0/deps/zlib \
+	-I/home/kazimis/.cache/node-gyp/15.5.0/deps/v8/include \
+	-I/home/kazimis/Node.JS-Huffman-Encoding-App/node_modules/node-addon-api
 
 OBJS := \
 	$(obj).target/$(TARGET)/cppsrc/main.o \
