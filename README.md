@@ -12,7 +12,7 @@ I use two communication methods function call and running language as executable
 
 ## How to run this App
 
-To run this app it requires vagrant and Node.js.
+To run this app it requires Node.js.
 
 ```python
 npm install
