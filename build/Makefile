@@ -319,7 +319,7 @@ endif
 
 quiet_cmd_regen_makefile = ACTION Regenerating $@
 cmd_regen_makefile = cd $(srcdir); /home/kazimis/Node.JS-Huffman-Encoding-App/node_modules/node-gyp/gyp/gyp_main.py -fmake --ignore-environment "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=/home/kazimis/.cache/node-gyp/15.5.0" "-Dnode_gyp_dir=/home/kazimis/Node.JS-Huffman-Encoding-App/node_modules/node-gyp" "-Dnode_lib_file=/home/kazimis/.cache/node-gyp/15.5.0/<(target_arch)/node.lib" "-Dmodule_root_dir=/home/kazimis/Node.JS-Huffman-Encoding-App" "-Dnode_engine=v8" "--depth=." "-Goutput_dir=." "--generator-output=build" -I/home/kazimis/Node.JS-Huffman-Encoding-App/build/config.gypi -I/home/kazimis/Node.JS-Huffman-Encoding-App/node_modules/node-gyp/addon.gypi -I/home/kazimis/.cache/node-gyp/15.5.0/include/node/common.gypi "--toplevel-dir=." binding.gyp
-Makefile: $(srcdir)/node_modules/node-addon-api/src/node_api.gyp $(srcdir)/binding.gyp $(srcdir)/node_modules/node-gyp/addon.gypi $(srcdir)/build/config.gypi $(srcdir)/../.cache/node-gyp/15.5.0/include/node/common.gypi
+Makefile: $(srcdir)/build/config.gypi $(srcdir)/binding.gyp $(srcdir)/node_modules/node-gyp/addon.gypi $(srcdir)/node_modules/node-addon-api/src/node_api.gyp $(srcdir)/../.cache/node-gyp/15.5.0/include/node/common.gypi
 	$(call do_cmd,regen_makefile)
 
 # "all" is a concatenation of the "all" targets from all the included
